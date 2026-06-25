@@ -1,0 +1,12 @@
+@AbapCatalog.sqlViewName: 'ZEMPV'
+@EndUserText.label: 'Employee Reporting CDS View'
+
+define view Z_EMPLOYEE_CDS
+as select from zemployee
+{
+      key emp_id,
+          emp_name,
+          department,
+          salary,
+          join_date
+}
